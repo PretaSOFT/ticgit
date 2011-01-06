@@ -29,7 +29,7 @@ module TicGit
     
     def execute!
       case action
-      when 'list':
+      when 'list'
         handle_ticket_list
       when 'state'
         handle_ticket_state
@@ -50,7 +50,7 @@ module TicGit
       when 'milestone'
         handle_ticket_milestone
       else
-        puts 'not a command'
+        raise 'not a command'
       end
     end
 
